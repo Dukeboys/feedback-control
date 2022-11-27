@@ -31,17 +31,18 @@ The turret is the central "gadget" portion of this system. The turret provides a
 Parts:
 1. Base (Design Pending)
 2. [Ring Bearing](https://www.amazon.com/HONJIE-Aluminum-Rotating-Turntable-120mmx8-5mm/dp/B0887VP379/ref=sr_1_3?crid=25MPRIID7UV2C&keywords=turntable+aluminum&qid=1668983803&s=home-garden&sprefix=turntable+aluminum%2Cgarden%2C116&sr=1-3) (Or similar - if a slew ring gear bearing can be found affordably, that is an excelent choice, otherwise adding a ring gear may help by enabling direct servo control)
-3. [Slip Ring Connector](https://www.amazon.com/dp/B07NSPHVTN/?tag=bdtele-20&th=1) (or similar - minimum 4 wires, 1A)
-4. Hinge/Axle/Pivot point (selection pending - may be integrated in angle sensor)
-5. Angle sensor (selection pending)
-6. [EEPROM](https://www.adafruit.com/product/5146?gclid=Cj0KCQiAveebBhD_ARIsAFaAvrErFtn8yg5Amb8GxoTQJ-OP08a90qhKPKFxQHLtL3VqYIGCvSLvFHEaAqzjEALw_wcB)
-7. Connector 1: Host USB A
-8. Connector 2: Dedicated power, barrel connector (Voltage TBD)
-9. Connector 3: Host "General purpose" connector, [12 pin](https://www.amazon.com/Connectors-Waterproof-Electrical-Construction-Agriculture/dp/B09V7X3RP2/ref=sr_1_16?keywords=12%2Bpin%2Bconnector&qid=1669002962&sr=8-16&th=1): 2 dedicated Power (voltage level TBD), 4 pin USB, 2 I2C, 4 GPIO (function described in EEPROM and over USB)
-10. Connector 4+: 1 or more "load" connectors, 4 pin, 2 I2C, 2 GPIO (function described in EEPROM) - GPIO pins rated for 12 V 4A continuous [maybe this](https://www.amazon.com/YETOR-Waterproof-Electrical-Connectors-Connections/dp/B07QFW8X9Z/ref=sr_1_2?crid=3W1KC5UJCF2AZ&keywords=4+pin+connector&qid=1669008313&sprefix=4+pin+connect%2Caps%2C851&sr=8-2)
-11. [Motor Driver](https://www.pololu.com/product/2990)
-12. [Analog Multiplexer](https://www.sparkfun.com/products/9056?gclid=Cj0KCQiAveebBhD_ARIsAFaAvrFTHSWjHjLMJ4JXuAinAIm0MWlmRWhVzZ71kzsF0lE7V1qAPO93Qm0aAmL_EALw_wcB) (option listed supports low speed digital as well)
-13. [Microcontroller](https://www.digikey.com/en/products/detail/adafruit-industries-llc/4884/14000603?utm_adgroup=General&utm_source=google&utm_medium=cpc&utm_campaign=PMax:%20Smart%20Shopping_Product_Zombie%20SKUS&utm_term=&utm_content=General&gclid=Cj0KCQiAveebBhD_ARIsAFaAvrEzyIHVkc1qnl2kO_fT6JpncaQ-9ldckuksQhLyMB9qicEjcOqp8U8aAl8_EALw_wcB)
+3. Locking mechanism to lock the ring in place (Design Pending)
+4. [Slip Ring Connector](https://www.amazon.com/dp/B07NSPHVTN/?tag=bdtele-20&th=1) (or similar - minimum 4 wires, 1A)
+5. Hinge/Axle/Pivot point (selection pending - may be integrated in angle sensor)
+6. Angle sensor (selection pending)
+7. [EEPROM](https://www.adafruit.com/product/5146?gclid=Cj0KCQiAveebBhD_ARIsAFaAvrErFtn8yg5Amb8GxoTQJ-OP08a90qhKPKFxQHLtL3VqYIGCvSLvFHEaAqzjEALw_wcB)
+8. Connector 1: Host USB A
+9. Connector 2: Dedicated power, barrel connector (Voltage TBD)
+10. Connector 3: Host "General purpose" connector, [12 pin](https://www.amazon.com/Connectors-Waterproof-Electrical-Construction-Agriculture/dp/B09V7X3RP2/ref=sr_1_16?keywords=12%2Bpin%2Bconnector&qid=1669002962&sr=8-16&th=1): 2 dedicated Power (voltage level TBD), 4 pin USB, 2 I2C, 4 GPIO (function described in EEPROM and over USB)
+11. Connector 4+: 1 or more "load" connectors, 4 pin, 2 I2C, 2 GPIO (function described in EEPROM) - GPIO pins rated for 12 V 4A continuous [maybe this](https://www.amazon.com/YETOR-Waterproof-Electrical-Connectors-Connections/dp/B07QFW8X9Z/ref=sr_1_2?crid=3W1KC5UJCF2AZ&keywords=4+pin+connector&qid=1669008313&sprefix=4+pin+connect%2Caps%2C851&sr=8-2)
+12. [Motor Driver](https://www.pololu.com/product/2990)
+13. [Analog Multiplexer](https://www.sparkfun.com/products/9056?gclid=Cj0KCQiAveebBhD_ARIsAFaAvrFTHSWjHjLMJ4JXuAinAIm0MWlmRWhVzZ71kzsF0lE7V1qAPO93Qm0aAmL_EALw_wcB) (option listed supports low speed digital as well)
+14. [Microcontroller](https://www.digikey.com/en/products/detail/adafruit-industries-llc/4884/14000603?utm_adgroup=General&utm_source=google&utm_medium=cpc&utm_campaign=PMax:%20Smart%20Shopping_Product_Zombie%20SKUS&utm_term=&utm_content=General&gclid=Cj0KCQiAveebBhD_ARIsAFaAvrEzyIHVkc1qnl2kO_fT6JpncaQ-9ldckuksQhLyMB9qicEjcOqp8U8aAl8_EALw_wcB)
 
 Future Part ideas:
 1. boost regulator for stepping up input voltage (5-10 VDC for alingment with processor) up to motor voltage range
